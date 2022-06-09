@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h2>Author Profile</h2>
+{{request.user.username}}
+{{request.user.is_active}}
+{{request.user.last_login}}
+{{request.user.is_authenticated}}
+{{request.user.date_joined}}
+
+{% endblock %}
